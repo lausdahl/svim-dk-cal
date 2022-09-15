@@ -1,0 +1,28 @@
+?10604,		Midt Øst Cup1 (Horsens),		3/9-2022
+?9913,		REMA 1000(Forum Horsens),		16/9-2022
+?10605,		Midt ØstBegynder(Aarhus),		24/9-2022
+?9777,		Vest KBJunior/Senior(Hjørring),	7/10-2022
+?10454,		Vallecup(Grindsted),			15/10-2022
+?10614,		Regionsmesterskaber(Holstebro),	28/10-202
+?9779,		DM JuniorKB(Esbjerg),			3/11-2022
+?10627,		Midt ØstBegynder 2 (Brædstrup),	5/11-2022
+?10628,		Midt Øst Cup 2 (Odder),			5/11-2022
+?9788,		DM Hold,						18/11-2022
+?10417,		Herning GP (Herning),			25/11-2022
+,			Klubmesterskaber(Odder),		10/12-2022
+?9780,		DM KB (Vejle),					15/12-2022
+?10629,		Midt Øst Cup 3 (Aarhus),		7/1-2023
+?10325,		DM-ÅrgangKB,					3/02-2023
+?10620,		Distancestævne(Herning),		25/02-2023
+?10630,		BegynderEkstra (Silkeborg),		4/03-2023
+?10631,		Midt Øst Cup 4 (Lyseng),		4/03-2023
+?10370,		SpektrumOdder(Odder),			17/03-2023
+,			DM Junior LB,					23/03-2023
+?10632,		Midt ØstBegynder 3(Tilst),		15/04-2023
+?10330,		Vest Årgang,					21/04-2023
+?10332,		Vest BørnMedley,				22/04-2023
+?10658,		Hjørring SwimCup (Hjørring),	28/04-2023
+?10633,		Midt Øst Cup5 (Hedensted),		13/05-2023
+?10634,		Midt ØstBegynder 4(Aarhus),		10/06-2023
+?10334,		DM LB,							22/06-2023
+?10335,		DM ÅrgangLB,					27/06-2023
