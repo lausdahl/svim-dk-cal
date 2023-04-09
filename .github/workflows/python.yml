@@ -1,4 +1,4 @@
-name: Deploy To ECS (development)
+name: Sync
 
 # trigger
 on:
