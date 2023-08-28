@@ -7,7 +7,8 @@ import requests
 from bs4 import BeautifulSoup, NavigableString
 import csv
 
-def fetch_and_dump_ics():
+
+def fetch_and_dump_ics(entry_filter=None):
     cal = Calendar()
     cal_jylland = Calendar()
     cal_odder = Calendar()
@@ -15,16 +16,18 @@ def fetch_and_dump_ics():
     with open('odder.txt') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
-        odder_events=[str(row[0]).strip() for row in csv_reader]
-        odder_events=[k for k in odder_events if len(k)>0]
+        odder_events = [str(row[0]).strip() for row in csv_reader]
+        odder_events = [k for k in odder_events if len(k) > 0]
 
     url = "https://xn--svmmetider-1cb.dk/staevner/liste_ajax.php?_=1660577257550"
-    print("Fetching data from %s"%url)
+    print("Fetching data from %s" % url)
     with urllib.request.urlopen(url) as url:
         data = json.loads(url.read().decode())
         for d in data['data']:
             event_raw_date = d['meet_date_start']
-            if datetime.strptime(event_raw_date, '%Y-%m-%d').year >= datetime.today().year:
+            if (entry_filter == None and datetime.strptime(event_raw_date,
+                                                           '%Y-%m-%d').year >= datetime.today().year) or (
+                    entry_filter and entry_filter(datetime.strptime(event_raw_date, '%Y-%m-%d'))):
                 url = str(d['meet_link']).replace('\\', '')
                 url = url[url.index("'") + 1:-1]
                 url = url[0:url.index("'")].replace('../', 'https://xn--svmmetider-1cb.dk/')
@@ -47,7 +50,6 @@ def fetch_and_dump_ics():
                 zip_code = None
                 dk = False
 
-
                 def to_en(s):
                     for a, b in {('January', 'januar')
                         , ('February', 'februar'), ('March', 'marts'),
@@ -59,8 +61,7 @@ def fetch_and_dump_ics():
                         s = str(s).lower().replace(b, a)
                     return s
 
-
-                soup = BeautifulSoup(requests.get(url).text)
+                soup = BeautifulSoup(requests.get(url).text,features="html.parser")
                 for div in soup.findAll('div', attrs={'class': 'k-portlet__body'}):
                     for p in div.findAll('p'):
                         if 'Stævnestart:' in p.text:
