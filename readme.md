@@ -14,10 +14,11 @@ The script is also linked to a set of public google calendars (through a google 
 * Swimming meet (Jylland)
   * Web url: https://calendar.google.com/calendar/embed?src=jhpu1liovjefu5mbj5ui4uj8j4%40group.calendar.google.com&ctz=Europe%2FCopenhagen
   * iCal url: https://calendar.google.com/calendar/ical/jhpu1liovjefu5mbj5ui4uj8j4%40group.calendar.google.com/public/basic.ics
+  <!---
 * Swimming meet (Jylland, Odder selection)
   * Web url: https://calendar.google.com/calendar/embed?src=cnc7r2d4qfhp0qhu5js17l91bc%40group.calendar.google.com&ctz=Europe%2FCopenhagen
   * iCal url: https://calendar.google.com/calendar/ical/cnc7r2d4qfhp0qhu5js17l91bc%40group.calendar.google.com/public/basic.ics
-
+-->
 
 ## Adding a shared calendar to your google calendar
 https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop
