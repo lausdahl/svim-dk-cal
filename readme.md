@@ -46,6 +46,8 @@ https://calendar.google.com/calendar/syncselect
 * Add Account
 * Other
 * Add Subscribed Calendar
+
+  
 * Server add one of the urls for iCal from above e.g. https://calendar.google.com/calendar/ical/jhpu1liovjefu5mbj5ui4uj8j4%40group.calendar.google.com/public/basic.ics
 * Complete the wizard. No need to add username and password as the calendar is public. 
 * You should now be able to see the calendar in the Calendar app
